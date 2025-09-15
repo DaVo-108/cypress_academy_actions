@@ -11,4 +11,8 @@ describe("Cypress GitHub Actions Demo", () => {
   it("Login Header Check", () => {
     cy.get("h3.form-title").should("be.visible");
   });
+
+  it("Login Button check", () => {
+    cy.get(".btn").should("be.visible");
+  });
 });
