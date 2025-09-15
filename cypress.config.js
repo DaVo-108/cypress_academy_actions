@@ -1,11 +1,11 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-      // ? env nastavený na použití @cypress/grep, aby filtroval testy (nespouštěl ostatní )
+  // ? env nastavený na použití @cypress/grep, aby filtroval testy (nespouštěl ostatní )
   env: {
     grepFilterSpecs: true,
     grepOmitFiltered: true,
-  }
+  },
   e2e: {
     setupNodeEvents(on, config) {
       // ? Nastavení @cypress/grep aby měl přístup k testům
