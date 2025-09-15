@@ -1,4 +1,4 @@
-describe("Cypress GitHub Actions Demo", () => {
+describe("Cypress GitHub Actions Demo", { tags: "@smoke" }, () => {
   beforeEach(() => {
     cy.visit("https://tredgate.com/pmtool");
   });
