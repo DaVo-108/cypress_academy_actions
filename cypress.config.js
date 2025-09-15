@@ -8,10 +8,11 @@ module.exports = defineConfig({
   },
   e2e: {
     setupNodeEvents(on, config) {
-      // ? Nastavení @cypress/grep, aby měl přístup k testům
       require("@cypress/grep/src/plugin")(config);
       return config;
-      // implement node event listeners here
     },
   },
 });
+
+// ? implement node event listeners here
+// ? Nastavení @cypress/grep, aby měl přístup k testům

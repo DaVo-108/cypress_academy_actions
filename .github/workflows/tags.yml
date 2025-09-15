@@ -1,4 +1,4 @@
-name: Cypress Tests Filtering - Tags
+name: Cypress Tests Filtering - Tags, Chrome
 
 on:
   workflow_dispatch: # Ruční spouštění
@@ -13,3 +13,4 @@ jobs:
         uses: cypress-io/github-action@v6
         with: # Nastavení filtrování testů s tagem: @smoke
           env: grepTags=@smoke
+          browser: chrome
